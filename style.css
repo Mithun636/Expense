@@ -1,0 +1,35 @@
+div{
+    background-color:rgb(91, 153, 246);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+body{
+    padding: 150px 250px;
+    border-radius: 8px;
+}
+table{
+    width: 100%;
+    border-color:2px solid black;
+}
+select{
+    width: 20%;
+    height: 30px;
+}
+button{
+    margin: 20px 0px 40px;
+}
+input{
+    height: 25px;
+}
+table{
+    height: 100px;
+    border-collapse: collapse;
+}
+button{
+    height: 30px;
+    width: 200px;
+    background-color: green;
+    color: white;
+}

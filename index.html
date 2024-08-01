@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2>Expence Tracker</h2>
+        <form id="transaction-form">
+            <input type="text" id="name" placeholder="Enter the name" required>
+            <input type="text" id="amount" placeholder="Enter the Amount" required>
+            <select id="type">
+                <option value="" disabled selected>Choose one...</option>
+                <option value="Food">Food</option>
+                <option value="Home rent">Home rent</option>
+                <option value="shopping">shopping</option>
+            </select>
+            <input type="date" id="date" required>
+            <button onclick="form()">Add Expence</button><br><br>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Expence Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-table">
+            </tbody>
+        </table>
+        <p>Total : <span id="tot"></span></p>
+        <p>Filter Category : <select id="categ">
+            <option value="All">All</option>
+            <option value="Food">Food</option>
+            <option value="Home rent">Home rent</option>
+            <option value="shopping">shopping</option>
+        </select></p>
+    </div>
+</body>
+</html>
